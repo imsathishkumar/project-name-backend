@@ -18,7 +18,7 @@ mongoose
   .catch((err) => console.error("Could not connect to MongoDB...",err));
 
 // Set static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static("./public"));
 
 app.use(express.json());
 
