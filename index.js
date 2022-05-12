@@ -64,7 +64,7 @@ app.use("/checkRoom", async(req, res) => {
 
 app.use("/generate", (req,res)=>{
   const {room , roompassword } = req.body;
-  let link = `${process.env.URL}/join.html?&room=${room}&roompassword=${roompassword}`;
+  let link = `${process.env.MY_URL}/join.html?&room=${room}&roompassword=${roompassword}`;
   res.send(link.toString());
 })
 
